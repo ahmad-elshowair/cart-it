@@ -1,20 +1,32 @@
 import React from 'react'
 import { Navbar, Container, Form, Dropdown, Nav, Badge } from 'react-bootstrap'
-import { GiShoppingCart } from 'react-icons/gi'
-import { Link } from 'react-router-dom'
+import { GiShoppingCart } from 'react-icons/gi';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   return (
     <Navbar bg='dark' variant='dark' style={{height: "80px"}}>
       <Container>
-        <Navbar.Brand href="#">
-          <Link to="/" className="brand">Cart it</Link> 
+        <Navbar.Brand>
+          <Link 
+            to='/'
+            className="brand"
+          >
+            Cart it
+          </Link> 
         </Navbar.Brand>
-        <Form.Control style={{width: 400}} placeholder="what you are looking for ?" className='m-auto'></Form.Control>
+        <Navbar.Text className='search'>
+          <Form.Control 
+            style={{width: 400}}
+            placeholder="search a product ... " 
+            className='m-auto'
+          >
+          </Form.Control>
+          </Navbar.Text>
         <Nav>
           <Dropdown alignright='true'>
             <Dropdown.Toggle variant='success'>
-              <GiShoppingCart fontSize="25px"/>
+              <GiShoppingCart color="white" fontSize="30px"/>
               <Badge>{10}</Badge>
             </Dropdown.Toggle>
             <Dropdown.Menu>
