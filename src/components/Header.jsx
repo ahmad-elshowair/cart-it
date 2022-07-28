@@ -27,7 +27,7 @@ export const Header = () => {
           <Dropdown alignright='true'>
             <Dropdown.Toggle variant='success'>
               <GiShoppingCart color="white" fontSize="30px"/>
-              <Badge>{10}</Badge>
+              10
             </Dropdown.Toggle>
             <Dropdown.Menu>
               <span style={{padding: 10}}>Cart is Empty</span>

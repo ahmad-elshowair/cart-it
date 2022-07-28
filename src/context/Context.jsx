@@ -1,8 +1,9 @@
 import React, { createContext, useContext, useReducer } from 'react'
 import faker from 'faker';
 import { cartReducer } from './Reducers';
-const CartContext = createContext();
 
+const CartContext = createContext();
+faker.seed(99);
 export const Context = ({children}) => {
   const products = [...Array(20)].map(()=>({
     id: faker.datatype.uuid(),
