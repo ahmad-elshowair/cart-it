@@ -7,13 +7,12 @@ const Home = () => {
   const {
     state: {products},
   } = CartState();
-   console.log(products);
   return (
     <section className="home">
       <Filter/>
       <article className="productContainer">
         {
-          products.map((product =>(<SingleProduct product={product} key={product.id}/>)))
+          products.map((product) =>(<SingleProduct product={product} key={product.id}/>))
         }
       </article>
     </section>

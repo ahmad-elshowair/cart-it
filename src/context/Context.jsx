@@ -2,9 +2,10 @@ import React, { createContext, useContext, useReducer } from 'react'
 import faker from 'faker';
 import { cartReducer } from './Reducers';
 
-const CartContext = createContext();
+const Cart = createContext();
 faker.seed(99);
-export const Context = ({children}) => {
+
+const Context = ({children}) => {
   const products = [...Array(20)].map(()=>({
     id: faker.datatype.uuid(),
     name: faker.commerce.productName(),
@@ -20,9 +21,11 @@ export const Context = ({children}) => {
     cart: [],
   });
 
-  return <CartContext.Provider value={{state, dispatch}}>{children}</CartContext.Provider>
+  return <Cart.Provider value={{state, dispatch}}>{children}</Cart.Provider>
 }
 
 export const CartState = ()=>{
-  return useContext(CartContext)
+  return useContext(Cart)
 }
+
+export default Context;

@@ -1,9 +1,11 @@
 import React from 'react'
-import { Navbar, Container, Form, Dropdown, Nav, Badge } from 'react-bootstrap'
+import { Navbar, Container, Form, Dropdown, Nav } from 'react-bootstrap'
 import { GiShoppingCart } from 'react-icons/gi';
 import { Link } from 'react-router-dom';
+import { CartState } from '../context/Context';
 
 export const Header = () => {
+  const {state: {cart}} = CartState();
   return (
     <Navbar bg='dark' variant='dark' style={{height: "80px"}}>
       <Container>
@@ -27,7 +29,7 @@ export const Header = () => {
           <Dropdown alignright='true'>
             <Dropdown.Toggle variant='success'>
               <GiShoppingCart color="white" fontSize="30px"/>
-              10
+              {cart.length}
             </Dropdown.Toggle>
             <Dropdown.Menu>
               <span style={{padding: 10}}>Cart is Empty</span>
