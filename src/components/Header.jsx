@@ -49,7 +49,7 @@ export const Header = () => {
                             <span>$ {product.price.split('.')[0]}</span>
                           </div>
                           <AiFillDelete
-                            fontSize="15px"
+                            fontSize="20px"
                             style={{
                               cursor: "pointer"
                             }}

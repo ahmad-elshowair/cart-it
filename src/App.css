@@ -18,7 +18,7 @@
   flex-wrap: wrap;
   width: 78%;
   justify-content: space-around;
-  pad: 20px;
+  padding: 20px;
 }
 
 .filters {
@@ -29,7 +29,7 @@
   flex-direction: column;
   width: 20%;
   margin: 10px;
-  height: 87vh;
+  height: 84vh;
 }
 
 .filters>span {
