@@ -6,7 +6,7 @@ export const cartReducer = (state, action) => {
         ...state,
         cart: [
           ...state.cart,
-          {...action.payload, qty: 1} 
+          {...action.payload, quantity: 1} 
         ]
       };
     case "REMOVE_FROM_CARD":
@@ -14,6 +14,17 @@ export const cartReducer = (state, action) => {
         ...state, 
         cart: state.cart.filter(c => c.id !== action.payload.id),
       };
+    case "CHANGE_CART_QUANTITY":
+      return{
+        ...state,
+        cart: state.cart.filter((product) => 
+        product.id === action.payload.id ?(
+          product.quantity = action.payload.quantity
+          ):(
+            product.quantity
+            )
+        )
+      }
     default:
       return state;
   }

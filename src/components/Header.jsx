@@ -48,16 +48,21 @@ export const Header = () => {
                             <span>{product.name}</span>
                             <span>$ {product.price.split('.')[0]}</span>
                           </div>
-                          <AiFillDelete
-                            fontSize="20px"
-                            style={{
-                              cursor: "pointer"
-                            }}
+                          <Button
+                            type="button"
+                            variant='light'
                             onClick={()=> dispatch({
                               type:"REMOVE_FROM_CARD",
                               payload: product
                             })}
-                          />
+                          >
+                            <AiFillDelete
+                              fontSize="20px"
+                              style={{
+                                cursor: "pointer"
+                              }}
+                            />
+                          </Button>
                         </span>
                       ))
                     }
