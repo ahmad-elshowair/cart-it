@@ -1,4 +1,14 @@
 # Cart It
+
+_cart it app is e-commerce web page that emulate the add to cart and remove from cart with some filters_
+### filters: 
+
+- filter by ascending  and descending price
+- filter by fast delivery
+- filter by including out of stock
+- filter by search query
+
+
 ## Available Scripts
 
 In the project directory, you can run:
