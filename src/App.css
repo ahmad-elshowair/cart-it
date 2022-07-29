@@ -70,3 +70,37 @@
 .summary {
   width: 30%;
 }
+
+.search-box {
+  width: 400px !important;
+}
+
+@media (max-width: 771px) {
+  .productContainer {
+    width: 58%;
+    flex-direction: column;
+  }
+
+  .filters {
+    width: 40%;
+    padding: 10px;
+    margin: 5;
+  }
+
+  .products {
+    width: 100%;
+  }
+
+  .filters>span {
+    font-size: 13px;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .search-box {
+    width: auto !important;
+  }
+
+}

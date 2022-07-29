@@ -61,7 +61,7 @@ useEffect(() => {
                       }
                     </Form.Control>
                   </Col>
-                  <Col md={2}>
+                  <Col md={2} >
                     <Button 
                       type='button'
                       variant='light'
@@ -82,9 +82,9 @@ useEffect(() => {
         </ListGroup>
       </article>
       <article className="filters summary">
-          <span className="title">
+          <h2 className="title">
             Subtotal: ({cart.length}) Items
-          </span>
+          </h2>
           <span style={{fontWeight: "700", fontSize: "20px"}}>Total $ {totalPrice}</span>
           <Button type="button" disabled={cart.length === 0}>proceed to Checkout</Button>
       </article>

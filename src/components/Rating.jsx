@@ -12,7 +12,7 @@ const Rating = ({rating, onClick, style}) => {
             style={style}
           >
             {
-              rating >= index ?(
+              rating > index ?(
                 <AiFillStar fontSize="15px"/>
               ):(
                 <AiOutlineStar fontSize="15px"/>
