@@ -75,7 +75,7 @@ export const Header = () => {
                         </span>
                       ))
                     }
-                    <Link to='/cart'>
+                    <Link to='/cart-page'>
                       <Button
                         style={{width: "95%", margin: "0 10px"}} 
                       >Go to Cart</Button>
