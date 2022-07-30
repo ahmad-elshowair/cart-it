@@ -16,7 +16,7 @@ export const Header = () => {
       <Container>
         <Navbar.Brand>
           <Link 
-            to='/'
+            to='/cart-it'
             className="brand"
           >
             Cart it

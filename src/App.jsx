@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Header/>
       <Routes>
-        <Route path='/cart-it' index exact element={<Home/>}/>
+        <Route path='/cart-it' exact element={<Home/>}/>
         <Route path='/cart' exact element={<Cart/>}/>
       </Routes>
     </BrowserRouter>
